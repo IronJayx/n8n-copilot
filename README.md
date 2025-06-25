@@ -37,10 +37,10 @@ volta install node@22.16
 
 ## Quick Start
 
-Try n8n instantly with [npx](https://docs.n8n.io/hosting/installation/npm/) (requires [Node.js](https://nodejs.org/en/)):
+(requires [Node.js](https://nodejs.org/en/)):
 
 ```
-npx n8n
+pnpm build && pnpm start
 ```
 
 Access the editor at http://localhost:5678
