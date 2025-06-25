@@ -4,17 +4,15 @@
 
 n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.
 
-n8n-copilot adds Agentic capabilities to create and edit workflows with AI
+**n8n-copilot** adds Agentic capabilities to create and edit workflows with AI.
 
 ![n8n.io - Screenshot](https://raw.githubusercontent.com/IronJayx/n8n-copilot/master/assets/n8n-copilot-screenshot-readme.png)
 
 
 ## Key Capabilities
 
-- **All n8n capabilities**
-- **Workflow understanding**: ask questions about your workflow
-- **Prompt-based workflow creation**: create your workflow from scratch with AI
-- **Prompt-based workflow edition**: edit workflow with AI
+- **All of n8n capabilities**
+- **AI Copilot**: Native Agentic chat (workflow creation, edition, q&a...)
 
 ### Requirements
 
@@ -33,7 +31,6 @@ For mac users:
 ```
 volta install node@22.16
 ```
-
 
 ## Quick Start
 
