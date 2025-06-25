@@ -1,10 +1,10 @@
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
-# n8n-copilot - Fork of n8n with an integrated a workflow generation Agent
+# n8n-copilot - Copilot for n8n
 
 n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.
 
-**n8n-copilot** adds Agentic capabilities to create and edit workflows with AI.
+**n8n-copilot** adds native a native AI copilot to 10x your workflow development speed.
 
 ![n8n.io - Screenshot](https://raw.githubusercontent.com/IronJayx/n8n-copilot/master/assets/n8n-copilot-screenshot-readme.png)
 
