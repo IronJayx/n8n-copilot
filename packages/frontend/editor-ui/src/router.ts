@@ -29,6 +29,7 @@ const EntityUnAuthorised = async () => await import('./views/EntityUnAuthorised.
 const ForgotMyPasswordView = async () => await import('./views/ForgotMyPasswordView.vue');
 const MainHeader = async () => await import('@/components/MainHeader/MainHeader.vue');
 const MainSidebar = async () => await import('@/components/MainSidebar.vue');
+const ChatSidebar = async () => await import('@/components/ChatSidebar.vue');
 const LogsPanel = async () => await import('@/features/logs/components/LogsPanel.vue');
 const DemoFooter = async () => await import('@/features/logs/components/DemoFooter.vue');
 const NodeView = async () => await import('@/views/NodeView.vue');
@@ -344,7 +345,7 @@ export const routes: RouteRecordRaw[] = [
 		components: {
 			default: NodeView,
 			header: MainHeader,
-			sidebar: MainSidebar,
+			sidebar: ChatSidebar,
 			footer: LogsPanel,
 		},
 		meta: {
@@ -378,7 +379,7 @@ export const routes: RouteRecordRaw[] = [
 		components: {
 			default: NodeView,
 			header: MainHeader,
-			sidebar: MainSidebar,
+			sidebar: ChatSidebar,
 			footer: LogsPanel,
 		},
 		meta: {

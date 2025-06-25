@@ -1,18 +1,39 @@
 ![Banner image](https://user-images.githubusercontent.com/10284570/173569848-c624317f-42b1-45a6-ab09-f0ea3c247648.png)
 
-# n8n - Secure Workflow Automation for Technical Teams
+# n8n-copilot - Fork of n8n with an integrated a workflow generation Agent
 
-n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code. With 400+ integrations, native AI capabilities, and a fair-code license, n8n lets you build powerful automations while maintaining full control over your data and deployments.
+n8n is a workflow automation platform that gives technical teams the flexibility of code with the speed of no-code.
 
-![n8n.io - Screenshot](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-screenshot-readme.png)
+n8n-copilot adds Agentic capabilities to create and edit workflows with AI
+
+![n8n.io - Screenshot](https://raw.githubusercontent.com/IronJayx/n8n-copilot/master/assets/n8n-copilot-screenshot-readme.png)
+
 
 ## Key Capabilities
 
-- **Code When You Need It**: Write JavaScript/Python, add npm packages, or use the visual interface
-- **AI-Native Platform**: Build AI agent workflows based on LangChain with your own data and models
-- **Full Control**: Self-host with our fair-code license or use our [cloud offering](https://app.n8n.cloud/login)
-- **Enterprise-Ready**: Advanced permissions, SSO, and air-gapped deployments
-- **Active Community**: 400+ integrations and 900+ ready-to-use [templates](https://n8n.io/workflows)
+- **All n8n capabilities**
+- **Workflow understanding**: ask questions about your workflow
+- **Prompt-based workflow creation**: create your workflow from scratch with AI
+- **Prompt-based workflow edition**: edit workflow with AI
+
+### Requirements
+
+#### Anthropic API key
+
+You need your own Anthropic API key to use the chat.
+Get one at [Anthropic Console](https://console.anthropic.com/)
+
+Once the app is running you can add it as a standard n8n credentials.
+
+#### Node.js
+
+[Node.js](https://nodejs.org/en/) version 22.16 or newer is required for development purposes.
+
+For mac users:
+```
+volta install node@22.16
+```
+
 
 ## Quick Start
 
@@ -22,28 +43,32 @@ Try n8n instantly with [npx](https://docs.n8n.io/hosting/installation/npm/) (req
 npx n8n
 ```
 
-Or deploy with [Docker](https://docs.n8n.io/hosting/installation/docker/):
-
-```
-docker volume create n8n_data
-docker run -it --rm --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n docker.n8n.io/n8nio/n8n
-```
-
 Access the editor at http://localhost:5678
-
-## Resources
-
-- 📚 [Documentation](https://docs.n8n.io)
-- 🔧 [400+ Integrations](https://n8n.io/integrations)
-- 💡 [Example Workflows](https://n8n.io/workflows)
-- 🤖 [AI & LangChain Guide](https://docs.n8n.io/langchain/)
-- 👥 [Community Forum](https://community.n8n.io)
-- 📖 [Community Tutorials](https://community.n8n.io/c/tutorials/28)
 
 ## Support
 
-Need help? Our community forum is the place to get support and connect with other users:
-[community.n8n.io](https://community.n8n.io)
+Need help? This is a very early beta reach out to me directly if anything goes wrong.
+[Twitter](https://x.com/jayyiron)
+
+
+## Roadmap
+
+- [ ] faster workflow editions:
+  - [ ] Use a diff model/logic to apply workflow changes (no need to reply with full workflow)
+	- [ ] Add planning (which parts to edit/ or not)
+
+- [ ] discussion persistence
+  - [ ] Store chat history along with workflow
+
+- [ ] custom system prompt
+  - [ ] Add your own system prompt
+
+- [ ] hosted solution ?
+
+## Disclaimer
+
+Not affiliated with n8n
+
 
 ## License
 
@@ -57,13 +82,6 @@ n8n is [fair-code](https://faircode.io) distributed under the [Sustainable Use L
 
 Additional information about the license model can be found in the [docs](https://docs.n8n.io/reference/license/).
 
-## Contributing
-
-Found a bug 🐛 or have a feature idea ✨? Check our [Contributing Guide](https://github.com/n8n-io/n8n/blob/master/CONTRIBUTING.md) to get started.
-
-## Join the Team
-
-Want to shape the future of automation? Check out our [job posts](https://n8n.io/careers) and join our team!
 
 ## What does n8n mean?
 

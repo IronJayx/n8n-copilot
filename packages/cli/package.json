@@ -86,6 +86,7 @@
     "ts-essentials": "^7.0.3"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.33.0",
     "@aws-sdk/client-secrets-manager": "3.808.0",
     "@azure/identity": "4.3.0",
     "@azure/keyvault-secrets": "4.8.0",
